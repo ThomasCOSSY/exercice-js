@@ -69,9 +69,8 @@ let displayAbsoluteValue = function (number) {
 }
 
 //Exercice 15 : Afficher les valeurs absolues de plusieurs nombres.
-let displayAbsoluteValues = function (numbersArray) {
-  numbersArray = new Map();
-  return Math.abs(numbersArray);
+let displayAbsoluteValues = function (numbersArray) {  
+  return numbersArray.map(Math.abs);
 }
 
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
