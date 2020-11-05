@@ -45,7 +45,8 @@ let isString = function (sentence) {
 
 //Exercice 10 : Afficher l'extension du fichier.
 let displayExtension = function (fileName) {
-  return fileName.slice((fileName.lastIndexOf('.') - 1 >>> 0) + 2);
+  //return fileName.slice((fileName.lastIndexOf('.') - 1 >>> 0) + 2); marche mais comprend pas
+  return fileName.split('.').pop();
 }
 
 //Exercice 11 : Compter le nombre d'espace dans la chaîne.

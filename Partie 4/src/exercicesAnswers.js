@@ -55,9 +55,8 @@ let createPerson = function () {
 
 //Exercice 10 : Retourner la valeur de l\'index nom du tableau person.', function() {
 let returnName = function (array) {
-  let person = [];
-  person['name'] = 'Jean';
-  return person['name'];
+  
+  return array['name'];
 }
 
 //Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
