@@ -1,12 +1,8 @@
-let border = document.querySelectorAll("label");
+let name = document.getElementById("name");
 
-border.addEventListener("mouseenter" , addBorder);
-border.addEventListener("mouseleave" , removeBorder);
+name.addEventListener("focus" , border , true);
+name.addEventListener("blur" , border , false);
 
-function addBorder(){
-    border.classList.add("black");
-};
-
-function removeBorder(){
-    border.classList.remove("black")
+function border() {
+    name.classList.toggle("red");
 }
