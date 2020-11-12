@@ -9,7 +9,6 @@
 //   }
 //   return stringLength;
 // }
-let string = document.getElementById("string");
 
 
 let getStringLength = (string) => {
@@ -17,9 +16,11 @@ let getStringLength = (string) => {
     if (string.length === 1) {
         stringLength = "La chaîne contient qu'un seul caractère";
     } else {
-        stringLength = "La chaîne contient ${string.length} caractères";
+        stringLength = `La chaîne contient ${string.length} caractères`;
     }
     return stringLength;
 }
 
-alert(stringLength);
+let test = document.createElement("p");
+test.textContent = getStringLength("blabla");
+document.body.append(test);
